@@ -13,6 +13,8 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import CancelIcon from '@material-ui/icons/Cancel';
 import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
@@ -26,6 +28,8 @@ import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
 import Outstanding from './Outstanding.js';
+import LoanStatus from './LoanStatus.js';
+import LoanPayOff from './LoanPayOff.js';
 
 function Copyright() {
 	return (
@@ -114,7 +118,7 @@ const useStyles = makeStyles(theme => ({
 		overflow: 'auto',
 	},
 	container: {
-		paddingTop: theme.spacing(4),
+		paddingTop: theme.spacing(6),
 		paddingBottom: theme.spacing(4),
 	},
 	paper: {
@@ -184,21 +188,21 @@ export default function Dashboard() {
 				<div className={classes.appBarSpacer} />
 				<Container maxWidth="lg" className={classes.container}>
 					<Grid container spacing={3}>
-						<Grid container xs={9} spacing={3}>
-							<Grid xs={8} item style={{ backgroundColor: 'red' }}>
+						<Grid container xs={8} spacing={4}>
+							<Grid xs={8} item>
 								<Paper className={classes.paper} style={{ height: '100%' }}>
 									<Outstanding />
 								</Paper>
 							</Grid>
 							<Grid xs={4} container spacing={3} >
 								<Grid xs={12} item>
-									<Paper className={fixedHeightPaper}>
-										<Deposits />
+									<Paper style={{ padding: 10 }}>
+										<LoanStatus />
 									</Paper>
 								</Grid>
 								<Grid xs={12} item>
-									<Paper className={fixedHeightPaper}>
-										<Deposits />
+									<Paper style={{ padding: 10 }}>
+										<LoanPayOff />
 									</Paper>
 								</Grid>
 							</Grid>
@@ -219,8 +223,48 @@ export default function Dashboard() {
 								</Paper>
 							</Grid> */}
 						</Grid>
-						<Grid item xs={3}>
-							<div style={{ width: '100%', height: '100%', backgroundColor: 'red' }} />
+						<Grid item xs={4} style={{  }}>
+							<div style={{ display: 'flex', flex: 1, width: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#F6F4FF' }} >
+								<div style={{ flex: 1, backgroundColor: 'red' }}>
+									<img src="https://via.placeholder.com/600x600" style={{ width: '100%', height: '100%'}} />
+								</div>
+								<div style={{ display: 'flex', flex: 1, paddingTop: 20, paddingRight: 10, paddingLeft: 10 }}>
+									<Paper style={{ padding: 10 }}>
+										<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 15 }}>
+											<p style={{ margin: 0, fontSize: 8 }}>NOTIFICATIONS</p>
+											<p style={{ margin: 0, fontSize: 8, color: '#FDBD4C' }}>Mark all as read</p>
+										</div>
+										<div style={{ marginBottom: 10, display: 'flex', width: '100%', backgroundColor: '#F6F4FF', alignItems: 'center', padding: 10, borderRadius: 10 }}>
+											<CheckCircleIcon />
+											<div>
+												<p style={{ margin: 0, fontSize: 8 }}>Your personal loan payoff of N2,000,000 has been approved by HR</p>
+												<p style={{ margin: 0, fontSize: 8 }}>a day ago</p>
+											</div>
+										</div>
+										<div style={{ marginBottom: 10, display: 'flex', width: '100%', backgroundColor: '#F6F4FF', alignItems: 'center', padding: 10, borderRadius: 10 }}>
+											<CancelIcon />
+											<div>
+												<p style={{ margin: 0, fontSize: 8 }}>Your personal loan payoff of N2,000,000 has been approved by HR</p>
+												<p style={{ margin: 0, fontSize: 8 }}>a day ago</p>
+											</div>
+										</div>
+										<div style={{ marginBottom: 10, display: 'flex', width: '100%', alignItems: 'center', padding: 10, }}>
+											<CancelIcon />
+											<div>
+												<p style={{ margin: 0, fontSize: 8 }}>Your next loan repayment is two weeks away</p>
+												<p style={{ margin: 0, fontSize: 8 }}>a week ago</p>
+											</div>
+										</div>
+										<div style={{ marginBottom: 10, display: 'flex', width: '100%', alignItems: 'center', padding: 10, }}>
+											<CancelIcon />
+											<div>
+												<p style={{ margin: 0, fontSize: 8 }}>Your next loan repayment is two weeks away</p>
+												<p style={{ margin: 0, fontSize: 8 }}>a week ago</p>
+											</div>
+										</div>
+									</Paper>
+								</div>
+							</div>
 						</Grid>
 					</Grid>
 				</Container>

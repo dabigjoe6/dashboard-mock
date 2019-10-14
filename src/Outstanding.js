@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import Title from './Title';
 import Divider from '@material-ui/core/Divider';
 
+import ProgressBar from './ProgressBar.js';
+
 const useStyles = makeStyles({
 	depositContext: {
 		flex: 1,
@@ -27,14 +29,16 @@ export default function Outstanding() {
 						</div>
 					</div>
 					<div style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-						<Button variant="contained" color="success" style={{ fontWeight: 'initial', borderRadius: 0, textTransform: 'none' }}>
+						<Button variant="contained" style={{ backgroundColor: '#82C05C', fontWeight: 'initial', borderRadius: 0, textTransform: 'none' }}>
 							+Request Loan
       			</Button>
 					</div>
 
 				</div>
-				<div style={{ flex: 3, backgroundColor: 'pink' }}>
-
+				<Divider />
+				<div style={{ flex: 3,  }}>
+				<Typography variant="h6" style={{ fontSize: 12, fontWeight: 'initial', marginBottom: 15 }}>RUNNING LOAN(S)</Typography>
+				{/* <ProgressBar /> */}
 				</div>
 				<Divider />
 			</div>
