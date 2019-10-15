@@ -28,7 +28,7 @@ export default function LoanPayOff() {
 					</Typography>
                     </div>
                     <div style={{ display: 'flex', flex: 1, justifyContent: 'center' }}>
-                        <EventBusy fontSize="large" color="#E6F2DE" />
+                        <EventBusy fontSize="large" style={{ color: 'red' }} />
                     </div>
                 </div>
                 <div style={{ display: 'flex' }}>

@@ -27,7 +27,7 @@ import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
-import Outstanding from './Outstanding.js';
+import OutstandingLoan from './OutstandingLoan.js';
 import LoanStatus from './LoanStatus.js';
 import LoanPayOff from './LoanPayOff.js';
 import PendingLoans from './PendingLoans.js';
@@ -196,7 +196,7 @@ export default function Dashboard() {
 						<Grid container xs={8} spacing={4}>
 							<Grid xs={8} item>
 								<Paper className={classes.paper} style={{ height: '100%' }}>
-									<Outstanding />
+									<OutstandingLoan />
 								</Paper>
 							</Grid>
 							<Grid xs={4} container spacing={3} >

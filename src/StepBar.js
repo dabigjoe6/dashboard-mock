@@ -13,7 +13,7 @@ export default function StepBar() {
 				>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"
@@ -25,7 +25,7 @@ export default function StepBar() {
 					</Step>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"
@@ -37,7 +37,7 @@ export default function StepBar() {
 					</Step>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"
@@ -49,7 +49,7 @@ export default function StepBar() {
 					</Step>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"
@@ -61,7 +61,7 @@ export default function StepBar() {
 					</Step>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"
@@ -73,7 +73,7 @@ export default function StepBar() {
 					</Step>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"
@@ -85,7 +85,7 @@ export default function StepBar() {
 					</Step>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"
@@ -97,7 +97,7 @@ export default function StepBar() {
 					</Step>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"
@@ -109,7 +109,7 @@ export default function StepBar() {
 					</Step>
 					<Step transition="scale">
 						{({ accomplished }) => (
-							<div style={{ position: 'relative', top: 8, textAlign: 'center' }}>
+							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
 									width="30"

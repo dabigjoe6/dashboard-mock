@@ -27,7 +27,7 @@ export default function LoanStatus() {
 						</Typography>
 					</div>
 					<div style={{ display: 'flex', flex: 1, justifyContent: 'center' }}>
-						<EventAvailableIcon fontSize="large" color="#E6F2DE" />
+						<EventAvailableIcon fontSize="large" style={{ color: '#0ffc6d'}} />
 					</div>
 				</div>
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
