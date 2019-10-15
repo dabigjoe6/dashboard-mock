@@ -9,8 +9,6 @@ import Divider from '@material-ui/core/Divider';
 
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 
-import ProgressBar from './ProgressBar.js';
-
 const useStyles = makeStyles({
 	depositContext: {
 		flex: 1,

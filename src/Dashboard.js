@@ -30,6 +30,7 @@ import Orders from './Orders';
 import Outstanding from './Outstanding.js';
 import LoanStatus from './LoanStatus.js';
 import LoanPayOff from './LoanPayOff.js';
+import PendingLoans from './PendingLoans.js';
 
 function Copyright() {
 	return (
@@ -61,6 +62,7 @@ const useStyles = makeStyles(theme => ({
 		...theme.mixins.toolbar,
 	},
 	appBar: {
+		backgroundColor: 'white',
 		zIndex: theme.zIndex.drawer - 1,
 		transition: theme.transitions.create(['width', 'margin'], {
 			easing: theme.transitions.easing.sharp,
@@ -86,9 +88,13 @@ const useStyles = makeStyles(theme => ({
 	},
 	brandName: {
 		color: 'red',
+		fontSize: 30,
+		fontWeight: 'initial'
 
 	},
 	drawerPaper: {
+		color: 'white',
+		backgroundColor: '#63666a',
 		minWidth: 300,
 		paddingLeft: 10,
 		paddingRight: 10,
@@ -173,16 +179,15 @@ export default function Dashboard() {
 				<div className={classes.toolbarIcon}>
 					<ListItem button>
 						<ListItemIcon>
-							<DashboardIcon />
+							<DashboardIcon style={{ color: 'white',  }} />
 						</ListItemIcon>
 						<ListItemText primary="Dashboard" />
 					</ListItem>
 
 				</div>
-				<Divider />
-				<List>{mainListItems}</List>
-				<Divider />
-				<List>{secondaryListItems}</List>
+				<Divider  style={{ backgroundColor: 'white', }} />
+				<List >{mainListItems}</List>
+				<List >{secondaryListItems}</List>
 			</Drawer>
 			<main className={classes.content}>
 				<div className={classes.appBarSpacer} />
@@ -208,7 +213,7 @@ export default function Dashboard() {
 							</Grid>
 							<Grid xs={12} item>
 								<Paper className={classes.paper}>
-									<Orders />
+									<PendingLoans />
 								</Paper>
 							</Grid>
 
@@ -224,7 +229,7 @@ export default function Dashboard() {
 							</Grid> */}
 						</Grid>
 						<Grid item xs={4} style={{  }}>
-							<div style={{ display: 'flex', flex: 1, width: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#F6F4FF' }} >
+							<div style={{ display: 'flex', flex: 1, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#F6F4FF' }} >
 								<div style={{ flex: 1, backgroundColor: 'red' }}>
 									<img src="https://via.placeholder.com/600x600" style={{ width: '100%', height: '100%'}} />
 								</div>

@@ -7,8 +7,6 @@ import Button from '@material-ui/core/Button';
 import Title from './Title';
 import Divider from '@material-ui/core/Divider';
 
-import ProgressBar from './ProgressBar.js';
-
 const useStyles = makeStyles({
 	depositContext: {
 		flex: 1,
