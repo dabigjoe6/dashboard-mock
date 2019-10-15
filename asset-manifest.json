@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/dabigjoe6/dashboard-mock/static/css/main.b100e6da.chunk.css",
+    "main.js": "/dabigjoe6/dashboard-mock/static/js/main.acf1bb03.chunk.js",
+    "main.js.map": "/dabigjoe6/dashboard-mock/static/js/main.acf1bb03.chunk.js.map",
+    "runtime-main.js": "/dabigjoe6/dashboard-mock/static/js/runtime-main.b89bab5f.js",
+    "runtime-main.js.map": "/dabigjoe6/dashboard-mock/static/js/runtime-main.b89bab5f.js.map",
+    "static/css/2.4bb5339d.chunk.css": "/dabigjoe6/dashboard-mock/static/css/2.4bb5339d.chunk.css",
+    "static/js/2.135e84e3.chunk.js": "/dabigjoe6/dashboard-mock/static/js/2.135e84e3.chunk.js",
+    "static/js/2.135e84e3.chunk.js.map": "/dabigjoe6/dashboard-mock/static/js/2.135e84e3.chunk.js.map",
+    "index.html": "/dabigjoe6/dashboard-mock/index.html",
+    "precache-manifest.664954af2c62b0dacb4380d55479c438.js": "/dabigjoe6/dashboard-mock/precache-manifest.664954af2c62b0dacb4380d55479c438.js",
+    "service-worker.js": "/dabigjoe6/dashboard-mock/service-worker.js",
+    "static/css/2.4bb5339d.chunk.css.map": "/dabigjoe6/dashboard-mock/static/css/2.4bb5339d.chunk.css.map",
+    "static/css/main.b100e6da.chunk.css.map": "/dabigjoe6/dashboard-mock/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/dabigjoe6/dashboard-mock/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b89bab5f.js",
+    "static/css/2.4bb5339d.chunk.css",
+    "static/js/2.135e84e3.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.acf1bb03.chunk.js"
+  ]
+}
