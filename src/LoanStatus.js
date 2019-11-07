@@ -19,7 +19,7 @@ export default function LoanStatus() {
 	const classes = useStyles();
 	return (
 		<React.Fragment>
-			<div>
+			<div style={{ height: 200, paddingLeft: 15 }}>
 				<div style={{ display: 'flex', width: '100%', }}>
 					<div style={{ display: 'flex', flex: 1, }}>
 						<Typography component="p" variant="h6" style={{ fontSize: 13, fontWeight: 'initial' }}>
@@ -27,7 +27,7 @@ export default function LoanStatus() {
 						</Typography>
 					</div>
 					<div style={{ display: 'flex', flex: 1, justifyContent: 'center' }}>
-						<EventAvailableIcon fontSize="large" style={{ color: '#0ffc6d'}} />
+						<EventAvailableIcon fontSize="large" style={{ color: '#0ffc6d' }} />
 					</div>
 				</div>
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -43,8 +43,8 @@ export default function LoanStatus() {
 					<div style={{ display: 'flex', flex: 1, flexDirection: 'column', }}>
 						<p style={{ fontSize: 9, margin: 0 }}>Rent</p>
 						<div style={{ display: 'flex' }}>
-							<p style={{ margin: 0, fontSize: 22, fontWeight: 'initial' }}>200,000.00</p>
-							<p style={{ margin: 0, fontSize: 9 }}>NGN</p>
+							<p style={{ margin: 0, fontSize: 16, fontWeight: 'bold' }}>200,000.00</p>
+							<p style={{ margin: 0, fontSize: 7 }}>NGN</p>
 						</div>
 						<div style={{ display: 'flex', justifyContent: 'space-between' }}>
 							<p style={{ fontSize: 8, margin: 0 }}>Jul-2018</p>
@@ -55,13 +55,13 @@ export default function LoanStatus() {
 						<p style={{ fontSize: 10 }}>Finance</p>
 					</div>
 				</div>
-				<Divider variant="middle" />
+				<Divider variant="middle" style={{ marginTop: 10, marginBottom: 10 }} />
 				<div style={{ display: 'flex', }}>
 					<div style={{ display: 'flex', flex: 1, flexDirection: 'column', }}>
 						<p style={{ fontSize: 9, margin: 0 }}>Personal Loan</p>
 						<div style={{ display: 'flex' }}>
-							<p style={{ margin: 0, fontSize: 22, fontWeight: 'initial' }}>250,000.00</p>
-							<p style={{ margin: 0, fontSize: 9 }}>NGN</p>
+							<p style={{ margin: 0, fontSize: 16, fontWeight: 'bold' }}>250,000.00</p>
+							<p style={{ margin: 0, fontSize: 7 }}>NGN</p>
 						</div>
 						<div style={{ display: 'flex', justifyContent: 'space-between' }}>
 							<p style={{ fontSize: 8, margin: 0 }}>Jul-2018</p>

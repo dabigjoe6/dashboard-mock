@@ -179,101 +179,84 @@ export default function Dashboard() {
 				<div className={classes.toolbarIcon}>
 					<ListItem button>
 						<ListItemIcon>
-							<DashboardIcon style={{ color: 'white',  }} />
+							<DashboardIcon style={{ color: 'white', }} />
 						</ListItemIcon>
 						<ListItemText primary="Dashboard" />
 					</ListItem>
 
 				</div>
-				<Divider  style={{ backgroundColor: 'white', }} />
+				<Divider style={{ backgroundColor: 'white', }} />
 				<List >{mainListItems}</List>
 				<List >{secondaryListItems}</List>
 			</Drawer>
 			<main className={classes.content}>
 				<div className={classes.appBarSpacer} />
-				<Container maxWidth="lg" className={classes.container}>
-					<Grid container spacing={3}>
-						<Grid container xs={8} spacing={4}>
-							<Grid xs={8} item>
-								<Paper className={classes.paper} style={{ height: '100%' }}>
-									<OutstandingLoan />
+				{/* <Container maxWidth="lg" className={classes.container} style={{ backgroundColor: 'red' }}> */}
+				<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+					<div style={{ display: 'flex', flex: 7, flexDirection: 'column', padding: 50, position: 'relative', bottom: 130 }}>
+						<div style={{ display: 'flex', marginBottom: 30 }}>
+							<Paper className={classes.paper} style={{ height: '100%', flex: 3, marginRight: 30 }}>
+								<OutstandingLoan />
+							</Paper>
+							<div style={{ display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'space-between' }}>
+								<Paper style={{ padding: 10 }}>
+									<LoanStatus />
 								</Paper>
-							</Grid>
-							<Grid xs={4} container spacing={3} >
-								<Grid xs={12} item>
-									<Paper style={{ padding: 10 }}>
-										<LoanStatus />
-									</Paper>
-								</Grid>
-								<Grid xs={12} item>
-									<Paper style={{ padding: 10 }}>
-										<LoanPayOff />
-									</Paper>
-								</Grid>
-							</Grid>
-							<Grid xs={12} item>
-								<Paper className={classes.paper}>
-									<PendingLoans />
+								<Paper style={{ padding: 10 }}>
+									<LoanPayOff />
 								</Paper>
-							</Grid>
-
-							{/* <Grid item xs={12} md={4} lg={3}>
-								<Paper className={fixedHeightPaper}>
-									<Deposits />
-								</Paper>
-							</Grid>
-							<Grid item xs={12}>
-								<Paper className={classes.paper}>
-									<Orders />
-								</Paper>
-							</Grid> */}
-						</Grid>
-						<Grid item xs={4} style={{  }}>
-							<div style={{ display: 'flex', flex: 1, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#F6F4FF' }} >
-								<div style={{ flex: 1, backgroundColor: 'red' }}>
-									<img src="https://via.placeholder.com/600x600" style={{ width: '100%', height: '100%'}} />
-								</div>
-								<div style={{ display: 'flex', flex: 1, paddingTop: 20, paddingRight: 10, paddingLeft: 10 }}>
-									<Paper style={{ padding: 10 }}>
-										<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 15 }}>
-											<p style={{ margin: 0, fontSize: 8 }}>NOTIFICATIONS</p>
-											<p style={{ margin: 0, fontSize: 8, color: '#FDBD4C' }}>Mark all as read</p>
-										</div>
-										<div style={{ marginBottom: 10, display: 'flex', width: '100%', backgroundColor: '#F6F4FF', alignItems: 'center', padding: 10, borderRadius: 10 }}>
-											<CheckCircleIcon />
-											<div>
-												<p style={{ margin: 0, fontSize: 8 }}>Your personal loan payoff of N2,000,000 has been approved by HR</p>
-												<p style={{ margin: 0, fontSize: 8 }}>a day ago</p>
-											</div>
-										</div>
-										<div style={{ marginBottom: 10, display: 'flex', width: '100%', backgroundColor: '#F6F4FF', alignItems: 'center', padding: 10, borderRadius: 10 }}>
-											<CancelIcon />
-											<div>
-												<p style={{ margin: 0, fontSize: 8 }}>Your personal loan payoff of N2,000,000 has been approved by HR</p>
-												<p style={{ margin: 0, fontSize: 8 }}>a day ago</p>
-											</div>
-										</div>
-										<div style={{ marginBottom: 10, display: 'flex', width: '100%', alignItems: 'center', padding: 10, }}>
-											<CancelIcon />
-											<div>
-												<p style={{ margin: 0, fontSize: 8 }}>Your next loan repayment is two weeks away</p>
-												<p style={{ margin: 0, fontSize: 8 }}>a week ago</p>
-											</div>
-										</div>
-										<div style={{ marginBottom: 10, display: 'flex', width: '100%', alignItems: 'center', padding: 10, }}>
-											<CancelIcon />
-											<div>
-												<p style={{ margin: 0, fontSize: 8 }}>Your next loan repayment is two weeks away</p>
-												<p style={{ margin: 0, fontSize: 8 }}>a week ago</p>
-											</div>
-										</div>
-									</Paper>
-								</div>
 							</div>
-						</Grid>
-					</Grid>
-				</Container>
-				<Copyright />
+						</div>
+						<div>
+							<Paper className={classes.paper}>
+								<PendingLoans />
+							</Paper>
+						</div>
+					</div>
+					<div style={{ display: 'flex', flex: 3, height: 1000, display: 'flex', flexDirection: 'column', backgroundColor: '#F6F4FF', position: 'relative', bottom: 50 }} >
+						<div style={{ flex: 1, }}>
+							<img src="https://via.placeholder.com/600x600" style={{ width: '100%', height: '100%' }} />
+						</div>
+						<div style={{ display: 'flex', flex: 1, paddingTop: 20, paddingRight: 30, paddingLeft: 30, justifyContent: 'center' }}>
+							<Paper style={{ padding: 10 }}>
+								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 15 }}>
+									<p style={{ margin: 0, fontSize: 8 }}>NOTIFICATIONS</p>
+									<p style={{ margin: 0, fontSize: 8, color: '#FDBD4C' }}>Mark all as read</p>
+								</div>
+								<div style={{ marginBottom: 10, display: 'flex', width: '100%', backgroundColor: '#F6F4FF', alignItems: 'center', padding: 10, borderRadius: 10 }}>
+									<CheckCircleIcon />
+									<div>
+										<p style={{ margin: 0, fontSize: 8 }}>Your personal loan payoff of N2,000,000 has been approved by HR</p>
+										<p style={{ margin: 0, fontSize: 8 }}>a day ago</p>
+									</div>
+								</div>
+								<div style={{ marginBottom: 10, display: 'flex', width: '100%', backgroundColor: '#F6F4FF', alignItems: 'center', padding: 10, borderRadius: 10 }}>
+									<CancelIcon />
+									<div>
+										<p style={{ margin: 0, fontSize: 8 }}>Your personal loan payoff of N2,000,000 has been approved by HR</p>
+										<p style={{ margin: 0, fontSize: 8 }}>a day ago</p>
+									</div>
+								</div>
+								<div style={{ marginBottom: 10, display: 'flex', width: '100%', alignItems: 'center', padding: 10, }}>
+									<CancelIcon />
+									<div>
+										<p style={{ margin: 0, fontSize: 8 }}>Your next loan repayment is two weeks away</p>
+										<p style={{ margin: 0, fontSize: 8 }}>a week ago</p>
+									</div>
+								</div>
+								<div style={{ marginBottom: 10, display: 'flex', width: '100%', alignItems: 'center', padding: 10, }}>
+									<CancelIcon />
+									<div>
+										<p style={{ margin: 0, fontSize: 8 }}>Your next loan repayment is two weeks away</p>
+										<p style={{ margin: 0, fontSize: 8 }}>a week ago</p>
+									</div>
+								</div>
+							</Paper>
+						</div>
+					</div>
+				</div>
+
+				{/* </Container> */}
 			</main>
 		</div>
 	);

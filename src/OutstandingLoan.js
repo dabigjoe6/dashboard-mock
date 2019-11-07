@@ -23,21 +23,20 @@ export default function OutstandingLoan() {
 	const classes = useStyles();
 	return (
 		<React.Fragment>
-			<div style={{ flexDirection: 'column', display: 'flex', height: '100%', width: '100%', }}>
-				<div style={{ flex: 1, display: 'flex', justifyContent: 'center', }}>
-					<div style={{ flex: 1, display: 'flex', alignItems: 'center', flexDirection: 'column', paddingTop: 20 }}>
+			<div style={{ flexDirection: 'column', display: 'flex', height: 420, width: '100%', }}>
+				<div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 40 }}>
+					<div style={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'column', paddingTop: 20, }}>
 						<Typography variant="h6" style={{ fontSize: 11, fontWeight: 'initial', marginBottom: 15 }}>TOTAL OUTSTANDING LOAN</Typography>
 						<div style={{ display: 'flex' }}>
 							<Typography variant="h6" style={{ fontSize: 24, fontWeight: 'bold', marginRight: 5 }}>4,250,182.30</Typography>
 							<Typography variant="h6" style={{ fontSize: 13, }}>NGN</Typography>
 						</div>
 					</div>
-					<div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-						<Button variant="contained" style={{ backgroundColor: '#82C05C', fontWeight: 'initial', borderRadius: 0, textTransform: 'none' }}>
-							+Request Loan
+					{/* <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', }}> */}
+					<Button variant="contained" style={{ backgroundColor: '#28A745', fontWeight: 'initial', borderRadius: 0, textTransform: 'none', height: 40, color: 'white', position: 'relative', top: 25 }}>
+						+Request Loan
       			</Button>
-					</div>
-
+					{/* </div> */}
 				</div>
 				<Divider />
 				<div style={{ flex: 3, display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
@@ -48,7 +47,7 @@ export default function OutstandingLoan() {
 							<AddBoxIcon style={{ color: 'grey' }} />
 						</div>
 						<div style={{ display: 'flex', flex: 10, flexDirection: 'column' }} >
-							<ProgressBar now={75} variant="success" style={{ width: '100%', height: '100%' }} label="Personal Loan(N200,000)" />
+							<ProgressBar now={75} variant="success" style={{ width: '100%', height: '100%', }} label="Personal Loan(N200,000)" />
 							<div style={{ display: 'flex', justifyContent: 'space-between' }}>
 								<p style={{ margin: 0, fontSize: 9 }}>July 2018</p>
 								<p style={{ margin: 0, fontSize: 9 }}>Tenor - 24 Months</p>

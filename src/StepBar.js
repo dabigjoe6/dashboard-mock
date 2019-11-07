@@ -6,17 +6,18 @@ import { ProgressBar, Step } from "react-step-progress-bar";
 export default function StepBar() {
 	return (
 		<React.Fragment>
-			<div style={{ width: '100%' }}>
+			<div style={{ width: '100%', }}>
 				<ProgressBar
 					percent={50}
 					filledBackground="#d2d2d2"
+					height={5}
 				>
 					<Step transition="scale">
 						{({ accomplished }) => (
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>Line 1</p>
@@ -28,7 +29,7 @@ export default function StepBar() {
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>Line 2</p>
@@ -40,7 +41,7 @@ export default function StepBar() {
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>HR</p>
@@ -52,7 +53,7 @@ export default function StepBar() {
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>Audit</p>
@@ -64,7 +65,7 @@ export default function StepBar() {
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>CEO</p>
@@ -76,7 +77,7 @@ export default function StepBar() {
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>CFO</p>
@@ -88,7 +89,7 @@ export default function StepBar() {
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>Staff</p>
@@ -100,7 +101,7 @@ export default function StepBar() {
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>Finance</p>
@@ -112,7 +113,7 @@ export default function StepBar() {
 							<div style={{ position: 'relative', top: 4, textAlign: 'center' }}>
 								<img
 									style={{ filter: `grayscale(${accomplished ? 0 : 100}%)`, margin: 0 }}
-									width="30"
+									width="25"
 									src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
 								/>
 								<p style={{ margin: 0, fontSize: 9 }}>Completed</p>
